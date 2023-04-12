@@ -1,4 +1,4 @@
-package vn.tma.nlu_edu;
+package vn.tma.nlu_edu.view;
 
 import android.os.Bundle;
 

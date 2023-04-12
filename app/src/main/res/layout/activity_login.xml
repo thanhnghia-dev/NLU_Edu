@@ -3,14 +3,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
+    tools:context=".controller.Login"
     android:orientation="vertical">
 
+    <!-- Tool bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_nlu"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_arrow_back_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/back"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="Đăng nhập"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
     <ImageView
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/logo_nlu"/>
 
     <TextView
@@ -26,40 +53,48 @@
     <EditText
         android:id="@+id/etID"
         android:layout_width="300dp"
-        android:layout_height="68dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:hint="Mã số sinh viên"
-        android:inputType="number"/>
+        android:inputType="number"
+        android:background="@drawable/border_edt"
+        android:drawablePadding="8dp"
+        android:drawableLeft="@drawable/baseline_perm_identity_24"
+        android:padding="8dp"/>
 
     <EditText
         android:id="@+id/etPass"
         android:layout_width="300dp"
-        android:layout_height="68dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:hint="Mật khẩu"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        android:background="@drawable/border_edt"
+        android:drawablePadding="8dp"
+        android:drawableLeft="@drawable/outline_lock_24"
+        android:padding="8dp"/>
     
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="190dp"
+        android:layout_width="300dp"
         android:layout_height="67dp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:text="ĐĂNG NHẬP"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:backgroundTint="@color/green_nlu"/>
+        android:background="@drawable/border_btn"/>
 
     <TextView
         android:id="@+id/forgotPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:text="Quên mật khẩu?"
+        android:text="Quên mật khẩu"
         android:textColor="@color/black"
         android:textSize="18sp"/>
 

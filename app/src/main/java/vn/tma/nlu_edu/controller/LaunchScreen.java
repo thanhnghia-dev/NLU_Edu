@@ -1,10 +1,12 @@
-package vn.tma.nlu_edu;
+package vn.tma.nlu_edu.controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+
+import vn.tma.nlu_edu.R;
 
 public class LaunchScreen extends AppCompatActivity {
 
@@ -21,7 +23,7 @@ public class LaunchScreen extends AppCompatActivity {
                 } catch (Exception e) {
                     Log.d("Test", "Error Start");
                 } finally {
-                    Intent intent = new Intent(LaunchScreen.this, Login.class);
+                    Intent intent = new Intent(LaunchScreen.this, Main.class);
                     startActivity(intent);
                 }
             }
