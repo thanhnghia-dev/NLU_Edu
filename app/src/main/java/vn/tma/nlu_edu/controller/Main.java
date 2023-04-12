@@ -1,4 +1,4 @@
-package vn.tma.nlu_edu;
+package vn.tma.nlu_edu.controller;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,14 +6,17 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
+
+import vn.tma.nlu_edu.view.Account;
+import vn.tma.nlu_edu.view.Home;
+import vn.tma.nlu_edu.view.Notification;
+import vn.tma.nlu_edu.R;
 
 public class Main extends AppCompatActivity {
     BottomNavigationView view;
